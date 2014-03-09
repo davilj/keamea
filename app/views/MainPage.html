@@ -1,0 +1,13 @@
+<h1>recipy</h1>
+    <ul class='recipies' ng-repeat="recipy in recipies">
+	<li class='recipe'>
+            <div class="recipe_display" ng-click='showRecipy(recipy.id)'>
+                <img class="shadow_big" ng-src="images/{{recipy.image}}" alt="picture of recipy:{{recipy.name}}">
+                <div>						
+                    <h3>{{recipy.name}}</h3>
+                         {{recipy.desc}}
+                </div> 
+            </div>
+        </li>
+    </ul>
+

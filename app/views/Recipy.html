@@ -1,0 +1,33 @@
+<div class='container'>
+    <div class='recipy_background'  ng-hide='showIngredients || showDirections'>
+        <img class="shadow_big" ng-src="img/{{recipy.image}}" alt="picture of recipy:{{recipy.name}}">
+    </div>
+    <div class='containersub'>
+        <div class='recipy_background'  >
+            <h2 ng-class='{phone_button : showIngredients || showDirections}' ng-click='showDirections=false;showIngredients=false;'>{{recipy.name}}</h2>
+            {{recipy.desc}}
+            <div>
+                <span>Prep: {{recipy.prepTime}}</span>
+                <span>Cook: {{recipy.cookTime}}</span>
+                <span>Make: {{recipy.quantity}}</span>
+            </div>
+        </div>
+
+
+        <h2 class='phone_button' ng-click='showDirections=false;showIngredients=true;' ng-hide='showIngredients'>Ingredients</h2>
+        <div class='recipy_background' ng-class='{hideIngrediens : !showIngredients}' ng-repeat="ingredientType in recipy.ingredientTypes">
+            <h2>{{ingredientType.name}}</h2>
+            <ul ng-repeat="item in ingredientType.list">
+                <li>{{item.name}} : {{item.quantity}}</li>
+            </ul>
+        </div>
+
+        <h2 class='phone_button' ng-click="showDirections=true;showIngredients=false;" ng-hide='showDirections'>Directions</h2>
+        <div class='recipy_background' ng-class='{hideDirections : !showDirections}' ng-repeat="directionType in recipy.directionsType">
+            <h2>{{directionType.name}}</h2>
+            <ul ng-repeat="item in directionType.list">
+                <li>{{item}}</li>
+            </ul>
+        </div>
+    </div>
+</div>

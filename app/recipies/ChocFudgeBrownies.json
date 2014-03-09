@@ -1,0 +1,36 @@
+{ 
+        "id" : "ChocFudgeBrownies",
+	"name" : "Choc Fudge Brownie",
+	"desc" : "I was taught that you never arrive at a tea, lunch or dinner empty handed. This is the quickest and easiest Chocolate brownies to make, if you have all the ingredients at home.",
+	"prepTime" : "5 min",
+	"cookTime" : "6 min (in Microwave)",
+	"quantity" : "About 20 BIG helpings",
+	"image" : "chocBrownies.jpg",
+        "images" : [],
+        "tags" : ["fudge","brownies"],
+	"ingredientTypes" : [ 
+				{"name": "Ingredients",
+                                 "list" : [	
+                                            {"name" : "butter (melted)", "quantity" : "100g"},
+                                            {"name" :"sugar" , "quantity": "1 cup"},
+                                            {"name" :"eggs" , "quantity": "2"},
+                                            {"name" :"baking powder" , "quantity": "1 tsp"},
+                                            {"name" :"cocoa" , "quantity": "1/3 cup"},
+                                            {"name" :"choc chips" , "quantity": "1 cup"}
+                                          ]
+				}
+                            ],
+	"directionsType" : [ 
+				{"name" : "Directions", 
+				 "list"	: [
+					"Mix everything together and place in microwavable dish.",
+                                        "Line with baking paper",
+                                        "6 mins in microwave on HIGH. Watch it and you will see that the edges move away from the side so this is a good sign that it is cooked.",
+                                        "When it comes out of the microwave it will still be a bit tacky but let it sit for a while. The lift out with the paper and turn upside down onto board – when cold peel paper off and sprinkle with icing sugar.",
+                                        "Try it as this is flop proof."
+					]
+				}
+			]
+	
+	
+}
