@@ -1,0 +1,24 @@
+<div >
+    
+        <div class='searchBox'>
+            <div>
+                <img ng-class="{searchImg : !searching}" ng-show="!searching" ng-src="images/search.jpg" alt="search" ng-click="searching=!searching;" >
+            </div>
+            <div class="searchControl" ng-show="searching">
+                    <img ng-src="images/search.jpg" alt="search" ng-click="searching=!searching;" >
+                    <span>Search:<span>
+                    <input ng-model="search.name" placeholder='name'>
+                    <input ng-model="search.ingredients" placeholder='ingredients' >
+                    <input ng-model="search.tags" placeholder='tags' >
+            </div>
+        </div>
+        <div class="searchResults">
+            <div ng-repeat="recipy in recipies | filter:search">
+                <div class="hidden">{{recipy.name}}</div>
+                <div class="hidden">{{recipy.desc}}</div>
+                <div class="hidden">{{recipy.ingredients}}</div>
+                <img class="shadow_big" ng-src="images/{{recipy.image}}" alt="picture of recipy:{{recipy.name}}">
+            </div>
+        </div>
+   
+</div>

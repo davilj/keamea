@@ -13,6 +13,8 @@ $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
 body {
     padding-top: 20px;
     padding-bottom: 20px;
+    background-image: url('../img/linen.jpg');
+    background-color: #F0F5F1;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -112,3 +114,362 @@ body {
 	border-radius: 5px;
         padding : 0.2em;
 }
+
+#header {
+	background-color: #849788;
+	color : #FFF;
+	padding-top : 0.3em;
+	padding-left : 0.2em;
+	font-family: 'Clicker Script', cursive;
+	font-size : 2em;
+	font-weight: 900;
+	text-shadow: 2px 2px #4F6851;
+	border-bottom : solid 2px #FFF;
+	position:fixed;
+        top : 0px;
+        left : 0px;
+        width : 100%;
+} 
+
+#menu {
+	display:flex;
+	flex-direction: column;
+	position : fixed;
+	top : 0px;
+	right : 0px;
+	z-index: 1;
+}
+
+@media (min-width: 768px) {
+	#menu {
+		flex-direction: row;
+	}	
+}
+
+
+
+#menu a {
+	font-size: larger;
+	font-weight: 900;
+	color : #4F6851;
+	background-color: #FFF;
+	border-color: #222;
+	font-family: 'Clicker Script', cursive;
+	padding : 0.5em;
+	margin: 0.24em;
+	text-decoration:none;
+	
+	-webkit-box-shadow: 0px 10px 26px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:    0px 10px 26px rgba(50, 50, 50, 0.75);
+	box-shadow:         0px 10px 26px rgba(50, 50, 50, 0.75);
+	
+	background: -moz-linear-gradient(
+		top,
+		#f0f0e8 0%,
+		#abc9ac);
+	background: -webkit-gradient(
+		linear, left top, left bottom,
+		from(#f0f0e8),
+		to(#abc9ac));
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+
+@media (min-width: 768px) {
+	#menu a {
+		margin: 0.1em;
+	}
+}
+
+
+
+#menu a:hover {
+	color : #FFF;
+	-webkit-box-shadow: 0px 11px 26px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:    0px 11px 26px rgba(50, 50, 50, 0.75);
+	box-shadow:         0px 11px 26px rgba(50, 50, 50, 0.75);
+	background: -moz-linear-gradient(
+		top,
+		#f0f0e8 0%,
+		#8AA38B);
+	background: -webkit-gradient(
+		linear, left top, left bottom,
+		from(#f0f0e8),
+		to(#8AA38B));
+        
+	
+}
+
+.recipies {
+	display:flex;
+	flex-direction: column;
+	list-style-type:none;
+	
+}
+
+@media (min-width: 768px) {
+    .recipies {
+        flex-direction: row;
+    }
+}
+
+ul {
+ padding : 0em;
+ margin : 0.5em;
+ margin-left : 2em;
+ }
+
+.recipies li {
+		margin : 0.1em;
+		width : 275px;
+		overflow : hidden;
+		-webkit-box-shadow: 0px 11px 26px rgba(50, 50, 50, 0.75);
+		-moz-box-shadow:    0px 11px 26px rgba(50, 50, 50, 0.75);
+		box-shadow:         0px 11px 26px rgba(50, 50, 50, 0.75);
+		-moz-border-radius: 10px;
+		-webkit-border-radius: 10px;
+		border-radius: 10px;
+		padding : 0px;
+		min-height : 275px;
+		height : 275px;
+}
+
+@media (min-width: 768px) {
+	.recipies li {
+		margin : 1em;
+		
+	}
+}
+
+.recipe_display img{
+	height : 275px;
+        curser:pointer;
+}
+
+
+.recipe_display div {
+	background-color : #FFF;
+	padding:0.1em;
+        margin: 0px;
+	opacity: 0.8;
+	position : relative;
+	top : -4.5em;
+	height : 4.5em;
+	overflow : hidden;
+	transition:  opacity 2s;
+	-webkit-transition:  opacity 2s;
+	
+}
+
+.recipyDesc {
+    font-size: 0.8em;
+}
+
+@media (min-width: 768px) {
+	.recipe_display div {
+            opacity : 0;
+	}
+	
+	.recipe_display img:hover + div {
+            opacity : 1;
+            
+	}
+}
+
+.recipe_display div {
+    margin : 0px;
+}
+
+div.recipe_display  {
+	color : #10490E;
+	padding:0px;
+       
+	margin: 0px;
+        text-decoration: none;
+}
+
+div.recipe_display div {
+    color: #000;
+    font-family: sans-serif;
+    font-size : 0.8em;
+    padding-left: 2px;
+}
+
+div.recipe_display div H3 {
+    color : #10490E;
+    padding:0px;
+    margin: 0px;
+    font-family: 'Clicker Script', cursive;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.recipe_instructions {
+	display : none;
+}
+
+.container {
+    display: flex;
+    flex-direction : column;
+}
+
+.hideIngrediens {
+    display : none;
+}
+
+.hideDirections {
+    display : none;
+}
+
+@media (min-width: 768px) {
+    .container {
+        flex-direction : row;
+        padding-top: 15px;
+    }
+    
+    .phone_button {
+        display:none;
+    }
+    
+    .hideIngrediens {
+        display : block;
+    }
+    
+    .hideDirections {
+        display : block;
+    }
+}
+
+.containersub {
+    display: flex;
+    flex-direction : column;
+}
+
+.recipy_background img {
+    height: 300px;
+    padding: 0px;
+    margin: 0px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+    
+.recipy_background h2 {
+   font-family: 'Clicker Script', cursive; 
+   font-weight: bold;
+   margin : 0.1em;
+}
+
+.recipy_background {
+    font-family: sans-serif;
+    font-size: 0.8em;
+    -webkit-box-shadow: 0px 10px 26px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    0px 10px 26px rgba(50, 50, 50, 0.75);
+    box-shadow:         0px 10px 26px rgba(50, 50, 50, 0.75);
+	
+	background: -moz-linear-gradient(
+		top,
+		#9C9C56 0%,
+		#D3D3AB);
+	background: -webkit-gradient(
+		linear, left top, left bottom,
+		from(#9C9C56),
+		to(#D3D3AB));
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+        padding : 0.2em;
+        overflow: hidden;
+}
+
+
+
+.phone_button {
+    margin : 0px;
+    color : #4F6851;
+    font-family: 'Clicker Script', cursive; 
+    font-weight: bold;
+    -webkit-box-shadow: 0px 10px 26px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    0px 10px 26px rgba(50, 50, 50, 0.75);
+    box-shadow:         0px 10px 26px rgba(50, 50, 50, 0.75);
+	
+	background: -moz-linear-gradient(
+		top,
+		#f0f0e8 0%,
+		#abc9ac);
+	background: -webkit-gradient(
+		linear, left top, left bottom,
+		from(#f0f0e8),
+		to(#abc9ac));
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+        padding : 0.2em;
+}
+
+
+
+  
+#full-screen-background-image {
+  z-index: -999;
+  min-height: 100%;
+  min-width: 80%;
+  width: 80%;
+  margin : auto;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.searchResults {
+    display: flex;
+    
+}
+
+.searchResults img {
+    height: 150px;
+    padding: 0px;
+    margin: 3px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 10px 26px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    0px 10px 26px rgba(50, 50, 50, 0.75);
+    box-shadow:         0px 10px 26px rgba(50, 50, 50, 0.75);
+}
+
+.searchBox {
+    display: flex;
+    margin-top : 21px;
+}
+
+.searchImg {
+    height : 35px;
+    cursor : pointer;
+}
+
+.searchControl img {
+    height : 45px;
+    cursor : pointer;
+}
+
+.searchControl input {
+    height : 45px;
+    cursor : pointer;
+    -moz-border-radius: 1em;
+    -webkit-border-radius: 1em;
+    border-radius: 1em;
+    padding-left: 1em;
+    font-size: 1.1em;
+}
+
+.searchControl span {
+    font-weight: bolder;
+}
+
+
+
+
+

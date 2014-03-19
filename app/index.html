@@ -9,6 +9,7 @@
     <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
+    <link href='http://fonts.googleapis.com/css?family=Niconne|Parisienne|Clicker+Script|Playball' rel='stylesheet' type='text/css'>
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
@@ -24,12 +25,11 @@
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
     
-    <div id="header">Dipsy Daisy's Kitchen</div>
-    <div id="menu">
-        <a href="search">Search</a>
-        <a href="search">Browse</a>
-        <a href="search">Surprise me!</a>
-	<a href="search">Craft</a>
+    <div id="header">KeaMea's Kitchen</div>
+    <div id="menu" ng-controller="menuController">
+        <a ng-click='loadPage("browse")'>Browse</a>
+        <a href="surpice">Surprise me!</a>
+	
     </div>
 
     
