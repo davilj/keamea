@@ -55,6 +55,7 @@ controller('ertMainPageCtrl', function($scope, $http, $location) {
   })
   .controller('BrowseCtrl', function($scope,$http) {
         console.log("Browsing");
+        $scope.menu.items = ['Home'];
         $http.get('recipies/RecipyList.json').success(function(data) {
             console.log("load all recipies" + data);
             $scope.recipies = [];
@@ -68,8 +69,14 @@ controller('ertMainPageCtrl', function($scope, $http, $location) {
   })
   .controller('menuController', function($scope, $location) {
       console.log("Using the menu controller")
+      $scope.menu = {
+          items : ['Browse']
+      };
+      $scope.setHomeMenu = function() {
+          $scope.meun.items = ["Home"]
+      }
       $scope.loadPage = function(path) {
-          $location.path(path)
+          $location.path(path.toLowerCase());
       }
   });
   

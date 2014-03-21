@@ -1,6 +1,37 @@
 $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
+$font-stack: 'Clicker Script', cursive;
 
 @import 'sass-bootstrap/lib/bootstrap';
+
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin boxshadow() {
+  -webkit-box-shadow: 0px 10px 26px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow:    0px 10px 26px rgba(50, 50, 50, 0.75);
+  box-shadow:         0px 10px 26px rgba(50, 50, 50, 0.75);
+}
+
+@mixin background($start, $end) {
+    background: -moz-linear-gradient(
+		top,
+		$start 0%,
+		$end);
+    background: -webkit-gradient(
+		linear, left top, left bottom,
+		from($start),
+		to($end));
+}
+
+@mixin transitions($type, $timeInSec) {
+    transition:  $type, $timeInSec;
+    -webkit-transition:  $type, $timeInSec;
+}
 
 .browsehappy {
     margin: 0.2em 0;
@@ -95,24 +126,12 @@ body {
 .phone_button {
     margin : 0px;
     color : #4F6851;
-    font-family: 'Clicker Script', cursive; 
+    font-family: $font-stack; 
     font-weight: bold;
-    -webkit-box-shadow: 0px 10px 26px rgba(50, 50, 50, 0.75);
-    -moz-box-shadow:    0px 10px 26px rgba(50, 50, 50, 0.75);
-    box-shadow:         0px 10px 26px rgba(50, 50, 50, 0.75);
-	
-	background: -moz-linear-gradient(
-		top,
-		#f0f0e8 0%,
-		#abc9ac);
-	background: -webkit-gradient(
-		linear, left top, left bottom,
-		from(#f0f0e8),
-		to(#abc9ac));
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
-	border-radius: 5px;
-        padding : 0.2em;
+    @include boxshadow;
+    @include background(#f0f0e8, #abc9ac);
+    @include border-radius(5px);
+    padding : 0.2em;
 }
 
 #header {
@@ -154,26 +173,14 @@ body {
 	color : #4F6851;
 	background-color: #FFF;
 	border-color: #222;
-	font-family: 'Clicker Script', cursive;
+	font-family: $font-stack;
 	padding : 0.5em;
 	margin: 0.24em;
 	text-decoration:none;
 	
-	-webkit-box-shadow: 0px 10px 26px rgba(50, 50, 50, 0.75);
-	-moz-box-shadow:    0px 10px 26px rgba(50, 50, 50, 0.75);
-	box-shadow:         0px 10px 26px rgba(50, 50, 50, 0.75);
-	
-	background: -moz-linear-gradient(
-		top,
-		#f0f0e8 0%,
-		#abc9ac);
-	background: -webkit-gradient(
-		linear, left top, left bottom,
-		from(#f0f0e8),
-		to(#abc9ac));
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
-	border-radius: 5px;
+	@include boxshadow;
+        @include background(#f0f0e8, #abc9ac);
+	@include border-radius(5px);
 }
 
 @media (min-width: 768px) {
@@ -185,27 +192,16 @@ body {
 
 
 #menu a:hover {
-	color : #FFF;
-	-webkit-box-shadow: 0px 11px 26px rgba(50, 50, 50, 0.75);
-	-moz-box-shadow:    0px 11px 26px rgba(50, 50, 50, 0.75);
-	box-shadow:         0px 11px 26px rgba(50, 50, 50, 0.75);
-	background: -moz-linear-gradient(
-		top,
-		#f0f0e8 0%,
-		#8AA38B);
-	background: -webkit-gradient(
-		linear, left top, left bottom,
-		from(#f0f0e8),
-		to(#8AA38B));
-        
-	
+	color: #000;
+        font-weight: bolder;
+	@include boxshadow;
+        @include background(#f0f0e8, #8AA38B);
 }
 
 .recipies {
 	display:flex;
 	flex-direction: column;
 	list-style-type:none;
-	
 }
 
 @media (min-width: 768px) {
@@ -216,20 +212,16 @@ body {
 
 ul {
  padding : 0em;
- margin : 0.5em;
- margin-left : 2em;
+ margin : 0em;
  }
 
 .recipies li {
 		margin : 0.1em;
 		width : 275px;
 		overflow : hidden;
-		-webkit-box-shadow: 0px 11px 26px rgba(50, 50, 50, 0.75);
-		-moz-box-shadow:    0px 11px 26px rgba(50, 50, 50, 0.75);
-		box-shadow:         0px 11px 26px rgba(50, 50, 50, 0.75);
-		-moz-border-radius: 10px;
-		-webkit-border-radius: 10px;
-		border-radius: 10px;
+		@include boxshadow;
+                @include border-radius(10px);
+		
 		padding : 0px;
 		min-height : 275px;
 		height : 275px;
@@ -257,9 +249,7 @@ ul {
 	top : -4.5em;
 	height : 4.5em;
 	overflow : hidden;
-	transition:  opacity 2s;
-	-webkit-transition:  opacity 2s;
-	
+        @include transitions(opacity, 2s)
 }
 
 .recipyDesc {
@@ -270,11 +260,9 @@ ul {
 	.recipe_display div {
             opacity : 0;
 	}
-	
 	.recipe_display img:hover + div {
             opacity : 1;
-            
-	}
+        }
 }
 
 .recipe_display div {
@@ -300,7 +288,7 @@ div.recipe_display div H3 {
     color : #10490E;
     padding:0px;
     margin: 0px;
-    font-family: 'Clicker Script', cursive;
+    font-family: $font-stack;
     font-weight: bold;
     font-size: 2em;
 }
@@ -350,13 +338,12 @@ div.recipe_display div H3 {
     height: 300px;
     padding: 0px;
     margin: 0px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
+    @include border-radius(5px);
+    
 }
     
 .recipy_background h2 {
-   font-family: 'Clicker Script', cursive; 
+   font-family: $font-stack; 
    font-weight: bold;
    margin : 0.1em;
 }
@@ -364,53 +351,24 @@ div.recipe_display div H3 {
 .recipy_background {
     font-family: sans-serif;
     font-size: 0.8em;
-    -webkit-box-shadow: 0px 10px 26px rgba(50, 50, 50, 0.75);
-    -moz-box-shadow:    0px 10px 26px rgba(50, 50, 50, 0.75);
-    box-shadow:         0px 10px 26px rgba(50, 50, 50, 0.75);
-	
-	background: -moz-linear-gradient(
-		top,
-		#9C9C56 0%,
-		#D3D3AB);
-	background: -webkit-gradient(
-		linear, left top, left bottom,
-		from(#9C9C56),
-		to(#D3D3AB));
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
-	border-radius: 5px;
-        padding : 0.2em;
-        overflow: hidden;
+    @include boxshadow;
+    @include background(#9C9C56, #D3D3AB);
+    @include border-radius(5px);
+    padding : 0.2em;
+    overflow: hidden;
 }
-
-
 
 .phone_button {
     margin : 0px;
     color : #4F6851;
-    font-family: 'Clicker Script', cursive; 
+    font-family: $font-stack; 
     font-weight: bold;
-    -webkit-box-shadow: 0px 10px 26px rgba(50, 50, 50, 0.75);
-    -moz-box-shadow:    0px 10px 26px rgba(50, 50, 50, 0.75);
-    box-shadow:         0px 10px 26px rgba(50, 50, 50, 0.75);
-	
-	background: -moz-linear-gradient(
-		top,
-		#f0f0e8 0%,
-		#abc9ac);
-	background: -webkit-gradient(
-		linear, left top, left bottom,
-		from(#f0f0e8),
-		to(#abc9ac));
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
-	border-radius: 5px;
-        padding : 0.2em;
+    @include boxshadow;
+    @include background(#f0f0e8, #abc9ac);
+    @include border-radius(5px);
+    padding : 0.2em;
 }
 
-
-
-  
 #full-screen-background-image {
   z-index: -999;
   min-height: 100%;
@@ -432,12 +390,8 @@ div.recipe_display div H3 {
     height: 150px;
     padding: 0px;
     margin: 3px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
-    -webkit-box-shadow: 0px 10px 26px rgba(50, 50, 50, 0.75);
-    -moz-box-shadow:    0px 10px 26px rgba(50, 50, 50, 0.75);
-    box-shadow:         0px 10px 26px rgba(50, 50, 50, 0.75);
+    @include border-radius(5px);
+    @include boxshadow;
 }
 
 .searchBox {
@@ -458,9 +412,7 @@ div.recipe_display div H3 {
 .searchControl input {
     height : 45px;
     cursor : pointer;
-    -moz-border-radius: 1em;
-    -webkit-border-radius: 1em;
-    border-radius: 1em;
+    @include border-radius(1em);
     padding-left: 1em;
     font-size: 1.1em;
 }

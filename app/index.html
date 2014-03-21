@@ -27,12 +27,11 @@
     
     <div id="header">KeaMea's Kitchen</div>
     <div id="menu" ng-controller="menuController">
-        <a ng-click='loadPage("browse")'>Browse</a>
-        <a href="surpice">Surprise me!</a>
-	
+        <div ng-repeat="item in menu.items">
+            <a ng-click='loadPage(item)'>{{item}}</a>
+        </div>
     </div>
 
-    
     <!-- Add your site or application content here -->
     <div class="container" ng-view ></div>
 
