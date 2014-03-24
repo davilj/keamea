@@ -1,0 +1,53 @@
+{ 
+        "id" : "AppleTart",
+	"name" : "Apple Tart",
+	"desc" : "Whenever I bake this Apple Tart for work or to take along somewhere, there is always a request to make sure that there is another one that will stay home",
+	"Prep time" : "20 min",
+	"Cook time" : "45 min",
+	"Makes" : "make 1 pie-dish",
+        "image" : "applepie_img1.jpg",
+	"images" : [],
+        "tags" : ["apple","pie"],
+	"reference" : [],
+	"ingredientTypes" : [ {"ingredients" : [
+						{"butter/margarine" : "4 1/2 tsp"},
+						{"self-raising flour" : "1 1/2 cup"},
+						{"milk" : "1/2 cup"},
+						{"coconut" : "1/2 cup"},
+						{"salt" : "pinch"},
+						{"sultanas / raisins" : "1/4 cup"},
+						{"eggs" : "3 large"},
+						{"sugar" : "1 1/2 cup"},
+						{"large eggs" : "3"},
+						{"tin of apples" : "1 tin (410g)"} 
+					]},
+                            {"Syrup": [
+						{"milk":"1 cup"},
+						{"sugar":"1 1/2 cup"},
+                                                {"butter/margarine":"3 tsp"},
+                                                {"vanilla essence":"1 1/2 tsp"}
+					]}
+					
+					
+			],
+	 "method" : [ {"Pie" : [
+		 		"Pre-heat oven to 180 °C.",
+		 		"Cream the butter and sugar.",
+		 		"Add eggs one at a time while mixing.",
+                                "Whisk / mix it thoroughly.",
+                                "Add salt, flour and milk alternately.",
+                                "Add coconut and sultanas",
+                                "Prepare a pie dish with non stick spray",
+                                "Spread the mixture in the dish",
+                                "Cut the apples in smaller pieces and spread evenly over the dough",
+                                "Bake for 45 min"
+                                
+	 		]},
+	 		{"Syrup:" : [
+	 			"Boil all ingredients and pour over the hot tart",
+                                "Cool and decorate it with fresh whipped cream"
+	 		]}
+                    ]
+	 
+	 
+}

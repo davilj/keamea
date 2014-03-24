@@ -1,6 +1,6 @@
 
-    <ul class='recipies' ng-repeat="recipy in recipies">
-	<li class='recipe'>
+    <div class='recipies' >
+	<div class='recipy' ng-repeat="recipy in recipies">
             <div class="recipe_display" ng-click='showRecipy(recipy.id)'>
                 <img class="shadow_big" ng-src="images/{{recipy.image}}" alt="picture of recipy:{{recipy.name}}">
                 <div>						
@@ -8,6 +8,6 @@
                          {{recipy.desc}}
                 </div> 
             </div>
-        </li>
-    </ul>
+        </div>
+    </div>
 

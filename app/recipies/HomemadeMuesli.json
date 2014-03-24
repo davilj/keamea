@@ -1,0 +1,41 @@
+{ 
+        "id" : "Homemade_Muesli",
+	"name" : "Homemade_Muesli",
+	"desc" : "Homemade Muesli with things you have in your pantry. The best of all this will have a better taste that Muesli from the shops",
+	"Prep time" : "15 min",
+	"Cook time" : "45 min",
+	"Makes" : "3 kg",
+        "image" : "HommadeMuesli.jpg",
+	"images" : [],
+        "tags" : ["honey","dried fruit","oats"],
+	"reference" : [],
+	"ingredientTypes" : [ 
+							{"ingredients" : [
+												{"raw oats" : "4x250ml"},
+												{"Shredded coconut" : "500ml"},
+												{"Sliced Almonds" : "500ml"},
+												{"Vegetable oil" : "187.5ml"},
+												{"Honey" : "125ml"},
+												{"Diced dried apricots" : "375ml"},
+												{"Dried Cherries" : "250ml"},
+												{"Dried Cranberries" : "250ml"},
+												{"Roasted Unsalted Cashews" : "250ml"}
+									]}
+						],
+	 "method" : [ {"directions" : [
+		 		"Heat oven to 180°C. Line a 13 x 18 1-inch baking tray with baking paper",
+		 		"Add the oats, coconut and almonds together in a large bowl",
+				"Whisk together the oil and honey",
+				"Pour the liquid mixture over the oat mixture and stir with a wooden spoon until all the oats and nuts are coated",
+				"Pour it onto the baking tray. Bake, stirring occasionally with a spatula, until the mixture turns a nice even golden brown.",
+				"This is about 45 minutes",
+		 		"Remove the granola mixture from the oven en allow to cool down, stirring occasionaly",
+				"Add the rest of the ingredients and mix through the granola",
+				"Store the cooled muesli in an airtight container"
+				
+	 		]}]
+	 	
+	 		
+	 
+	 
+}

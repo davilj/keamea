@@ -1,0 +1,47 @@
+{ 
+        "id" : "HealthRusks",
+	"name" : "Breakfast bars (Health rusks)",
+	"desc" : "This is a great breakfast when you are on the run. Dunk it in your coffee and let it soak a bit.  This is really filling.My son enjoy this as a morning snack at school so it is yummy just as it is.",
+	"Prep time" : "30 min",
+	"Cook time" : "3 hours",
+	"Makes" : "40-60 fingers",
+        "image" : "applepie_img1.jpg",
+	"images" : [],
+        "tags" : ["rusks"],
+	"reference" : [],
+	"ingredientTypes" : [ {"ingredients" : [
+						{"self-raising flour" : "1 Kg "},
+						{"baking powder" : "5 ml"},
+						{"salt" : "3 ml"},
+						{"muesli" : "500 ml"},
+						{"sultanas " : "125 ml (75 g)"},
+						{"chopped apricots / pears" : "125 ml (75 g)"},
+						{"assorted nuts" : "100g"},
+						{"coconut" : "250 ml"},
+						{"sunflower seeds" : "250 ml "},
+						{"sesame seeds" : "50 ml"},
+                                                {"brown sugar" : "375 ml"}, 
+                                                {"eggs" : "2 x extra large"},
+                                                {"yogurt of your choice" : "500 ml"},
+                                                {"butter, melted" : "500 g"} 
+					]}
+                        ],
+	 "method" : [ {"Instructions" : [
+		 		"Mix flour, baking powder, salt, muesli, sultanas, apricots, nuts, coconut,sunflower seeds, sesame seeds and sugar in a big mixing bowel.",
+		 		"Beat eggs and yoghurt together and mixed the cooled butter with egg mixture.",
+		 		"Add the yoghurt mixture with the dry ingredients and mix together with a wooden spoon.",
+                                "Pour the mixture in 3 buttered bread tins (or 1 big oven tray) and make it even on the top.",
+                                "After about 40 minutes of baking put foil over the rusks with the shinny part at the top to ensure that the rusks do not turn to brown on the top.",
+                                "When you put a test pin in the rusks and it comes out clean you can remove the rusks from the oven, leave it in the tins for about 5 minutes before you turn it around, and let it cool.",
+                                "Once it is cooled down you can cut it in thick slices and then in smaller fingers.",
+                                "Dry the rusks in the oven on 100C for about 3 hours after which you will switch the oven off and leave the rusks in the oven overnight.",
+                                "This makes 40-60 fingers of rusks depending on the size."
+                        ]},
+	 		{"Syrup:" : [
+	 			"Boil all ingredients and pour over the hot tart",
+                                "Cool and decorate it with fresh whipped cream"
+	 		]}
+                    ]
+	 
+	 
+}

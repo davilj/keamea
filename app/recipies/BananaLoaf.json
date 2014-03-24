@@ -1,0 +1,38 @@
+{ 
+        "id" : "BananaLoaf",
+	"name" : "Banana Loaf",
+	"desc" : "After many request by my friends....",
+	"Prep time" : "20 min",
+	"Cook time" : "1 hours",
+	"Makes" : "1 BIG loaf",
+        "image" : "bananabread_img1.jpg",
+	"images" : [],
+        "tags" : ["banana", "bread"],
+	"reference" : [],
+	"ingredientTypes" : [ {"ingredients" : [
+						{"butter/margarine at room temperature" : "125 ml"},
+						{"sugar" : "125 ml - 250 ml"},
+						{"vanilla essence" : "5 ml"},
+						{"eggs (room temp)" : "2"},
+						{"cake flour" : "500 ml"},
+						{"baking powder" : "10 ml"},
+						{"salt" : "2.5 ml"},
+						{"ripe bananas, mashed " : "4-6 (400 g / 1 3/4 cup)"}
+						
+                                                ]}
+                            ],
+	 "method" : [ {"Instructions" : [
+		 		"Preheat the oven to 180 C. Grease and line a small loaf pan with baking paper.",
+		 		"Cream the butter and sugar and add the vanilla essence.",
+		 		"Add the eggs one at a time, beating well after each addition.",
+                                "Sift together the dry ingredients and add to the egg mixture.",
+                                "Lastly, mash the bananas with a fork and add.",
+                                "blend well and turn the mixture into the pan. Bake for 1 hour or until done.",
+                                "Slice and butter"
+                               
+                        ]}
+	 		
+                    ]
+	 
+	 
+}

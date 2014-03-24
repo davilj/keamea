@@ -1,8 +1,6 @@
 $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
 $font-stack: 'Clicker Script', cursive;
 
-@import 'sass-bootstrap/lib/bootstrap';
-
 
 @mixin border-radius($radius) {
   -webkit-border-radius: $radius;
@@ -100,28 +98,7 @@ body {
     margin-top: 28px;
 }
 
-/* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
-    .container {
-        max-width: 730px;
-    }
 
-    /* Remove the padding we set earlier */
-    .header,
-    .marketing,
-    .footer {
-        padding-left: 0;
-        padding-right: 0;
-    }
-    /* Space out the masthead */
-    .header {
-        margin-bottom: 30px;
-    }
-    /* Remove the bottom border on the jumbotron for visual effect */
-    .jumbotron {
-        border-bottom: 0;
-    }
-}
 
 .phone_button {
     margin : 0px;
@@ -148,6 +125,7 @@ body {
         top : 0px;
         left : 0px;
         width : 100%;
+        z-index: 999;
 } 
 
 #menu {
@@ -199,14 +177,17 @@ body {
 }
 
 .recipies {
-	display:flex;
-	flex-direction: column;
-	list-style-type:none;
+        margin-left : 5%;
+        
+	
 }
 
 @media (min-width: 768px) {
     .recipies {
-        flex-direction: row;
+        padding-left : 5%;
+        padding-right: 5%;
+        background-color : red;
+            
     }
 }
 
@@ -215,28 +196,30 @@ ul {
  margin : 0em;
  }
 
-.recipies li {
+.recipy {
 		margin : 0.1em;
-		width : 275px;
+                max-width: 275px;
 		overflow : hidden;
 		@include boxshadow;
                 @include border-radius(10px);
-		
+		float : left;
 		padding : 0px;
 		min-height : 275px;
 		height : 275px;
+                
 }
 
 @media (min-width: 768px) {
-	.recipies li {
+	.recipies {
 		margin : 1em;
+                
 		
 	}
 }
 
 .recipe_display img{
 	height : 275px;
-        curser:pointer;
+        cursor:pointer;
 }
 
 
@@ -310,24 +293,7 @@ div.recipe_display div H3 {
     display : none;
 }
 
-@media (min-width: 768px) {
-    .container {
-        flex-direction : row;
-        padding-top: 15px;
-    }
-    
-    .phone_button {
-        display:none;
-    }
-    
-    .hideIngrediens {
-        display : block;
-    }
-    
-    .hideDirections {
-        display : block;
-    }
-}
+
 
 .containersub {
     display: flex;

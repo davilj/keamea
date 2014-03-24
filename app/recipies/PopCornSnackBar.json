@@ -1,0 +1,36 @@
+{ 
+        "id" : "PopCornSnackBar",
+	"name" : "Popcorn Snack Bar",
+	"desc" : "Here is another healthy option for a snack bar.",
+	"Prep time" : "40 min",
+	"Cook time" : "-",
+	"Makes" : "24 small fat bars",
+        "image" : "PopCornSnackBar_img.jpg",
+	"images" : [],
+        "tags" : ["pop corn", "bars", "breakfast"],
+	"reference" : [],
+	"ingredientTypes" : [ {"ingredients" : [
+						{"popped popcorn " : "8 cups"},
+						{"Oats" : "2 Cups"},
+						{"Almonds (or any other kind)" : "1 Cup"},
+						{"dried fruit" : "1 cup"},
+						{"honey" : "3/4 cup"},
+						{"brown sugar" : "3/4 cup"},
+						{"salt" : "pinch"}
+						]}
+                            ],
+	 "method" : [ {"instructions" : [
+		 		"Pop the popcorn and remember to remove any un-popped kernels (as this can break teeth)",
+		 		"Add in a small pot the honey, brown sugar and salt.  Bring to boil and stir till the sugar is melted.",
+		 		"Add all the other ingredients in a large bowl.",
+                                "Pour the syrup over the ingredients and mix well till everything is covered.",
+                                "This can become very sticky.",
+                                "Tip the mixture over in a tin or bowl which is lined with baking paper.",
+                                "Press it down with your hands and then refrigerate it for about 2 hours before you cut it in fingers."
+                               
+                        ]}
+	 		
+                    ]
+	 
+	 
+}

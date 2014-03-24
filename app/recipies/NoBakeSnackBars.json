@@ -1,0 +1,38 @@
+{ 
+        "id" : "NoBakeSnackBars",
+	"name" : "No Bake Snack Bars",
+	"desc" : "I decided to try these bars as this can become a very expensive snack to buy for lunch bags. The nice thing of this bar is that it is all healthy things in there and no preservatives or any other funny things you don’t know. The only thing is that it is really yummy so you need to make sure the container is hidden away, other wise you keep on munching on them.",
+	"Prep time" : "40 min",
+	"Cook time" : "-",
+	"Makes" : "24 small fat bars",
+        "image" : "NoBakeSnackBars_img1.jpg",
+	"images" : [],
+        "tags" : ["breakfast", "bars"],
+	"reference" : [],
+	"ingredientTypes" : [ {"ingredients" : [
+						{"puffed rice cereal " : "1 cups"},
+						{"cornflakes" : "1 cup"},
+						{"rolled oats" : "2 cups"},
+						{"cup raisins" : "1/2 cup"},
+						{"nuts of your choice" : "1/2 cup"},
+						{"firmly packed brown sugar" : "1/2 cup"},
+						{"honey" : "1/2 cup"},
+                                                {"peanut butter" : "1/2 cup"},
+                                                {"vanilla" : "1 teaspoon"}
+						]}
+                            ],
+	 "method" : [ {"instructions" : [
+		 		"In large bowl, combine cereal, rolled oats and raisins; set aside.",
+		 		"In small saucepan, combine brown sugar and honey.",
+		 		"Bring to a boil, stirring constantly.",
+                                "Stir in peanut butter and vanilla; blend until smooth.",
+                                "Pour over cereal mixture; mix well.",
+                                "Press into a pan or glass bowl, which is lined with baking paper",
+                                "Cool; cut into 24 bars."
+                               
+                        ]}
+	 		
+                    ]
+	 
+	 
+}

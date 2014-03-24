@@ -1,0 +1,34 @@
+{ 
+        "id" : "Cheesecake",
+	"name" : "Homemade Cheesecake",
+	"desc" : "There is nothing as nice as homemade Cheesecake. My son helped me to make the base out of sugar biscuits and melted margarine.",
+	"Prep time" : "10 min",
+	"Cook time" : "20 min",
+	"Makes" : "1 cheese cake",
+        "image" : "cheesecake_img1.jpg",
+	"images" : [],
+        "tags" : ["cheesecake", "fast"],
+	"reference" : [],
+	"ingredientTypes" : [ {"filling" : [
+						{"Condensemilk" : "1 tin (375g)"},
+						{"cream cheese" : "1 small tub (300ml)"},
+						{"lemon juice" : "3 table spoon"}
+                                                ]},
+                              {"base" : [
+						{"Sugar biscuits" : "enough to cover base (1 pack)"}
+					]}
+                                   
+                            ],
+	 "method" : [ 
+                        {"Instructions" : [
+                                "Pack base of pie-dish with one layer of biscuits",
+                                "Add filling",
+		 		"Bake this for 20 min at 180C",
+                                "Once cake is cooled down, top with fresh fruit and fruit syrup",
+		 		"Thats all!!."
+		 	]}
+	 		
+                    ]
+	 
+	 
+}

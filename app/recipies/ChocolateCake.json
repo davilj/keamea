@@ -1,0 +1,56 @@
+{ 
+        "id" : "NoEggs_chocolate_cake",
+	"name" : "Chocolate Cake",
+	"desc" : "This is the easiest and yummiest Chocolate cake.  This is always a winner",
+	"Prep time" : "10 min",
+	"Cook time" : "20 min",
+	"Makes" : "1 big cake",
+        "image" : "NoEggs_chocolate_cake.jpg",
+	"images" : [],
+        "tags" : ["cake","chocolate","no eggs"],
+		"ingredientTypes" : [ 
+							{"ingredients" : [
+												{"high-grade flour" : "750ml"},
+												{"baking powder" : "20ml"},
+												{"sugar" : "500ml"},
+												{"baking soda" : "1 tsp / 5ml"},
+												{"Cocao powder" : "80ml"},
+												{"boiling water" : "500ml"},
+												{"vanilla extract" : "10ml"},
+												{"vegetable oil" : "250ml"},
+												{"white vinager" : "50ml"}
+											 ]
+							},
+                            {"Icing Ingredients": [
+												{"Butter or Margarine" : "125gr"},
+												{"Icing sugar" : "375ml"},
+												{"Cocao powder" : "30ml"},
+												{"vanilla extract" : "5ml"}
+										]}
+						],
+	 "method" : [ {"normal" : [
+		 		"Heat oven to 180°C. Spray and Cook and line a oven tray (27X39cm tray) or 2 x 20cm round cake tins with baking paper",
+		 		"Sieve all the dry ingredients together in a big mixing bowel",
+				"Mix all the other ingredients (except the Icing ingredients) together in a mug and pour over the dry ingredients",
+				"Pour the liquid mixture over the dry ingredients and mix together with a fork or a wisk, till all ingredients are mixed in well",
+				"Bake for 20 minutes or till the skewer come out clean when testing",
+				"As soon as the cake is ready take it out of the oven and leave to cool down",
+		 		"While you wait for the cake to cool down you can make the Icing for the cake",
+				"Mix the butter/margarine till light and fluffy",
+				"Sieve the icing sugar and cocoa while mixing",
+				"Add the vanilla essence and mix well",
+				"When you are ready to ice the cake. Use the chocolate icing and finish the cake of with fresh strawberries "
+	 		]},
+	 		{"Variation:" : [
+	 			"To make chocolate cupcakes, preheat oven to 180°C and line 48 muffin pans with paper cases", 
+				"Prepare cake batter according to the instructions for The Chocolate Cake (see above)",
+				"Spoon mixture into the paper cases, filling about two thirds full", 
+				"Bake for 15-20 minutes. Cool before icing", 
+				"For icing, Use the same as for the cake", 
+				"Icing can be stored in the fridge in a sealed container for up to a week",
+				"Pipe onto the cakes and top with confectionery sprinkles. Makes 48."
+	 		]}
+                    ]
+	 
+	 
+}

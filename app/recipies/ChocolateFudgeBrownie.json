@@ -1,0 +1,34 @@
+{ 
+        "id" : "Microwave_Chocolate_Fudge_Brownie",
+	"name" : "Chocolate Fudge Brownie",
+	"desc" : "The quickest and easiest treat to make for a morning tea or just for a midnight snack",
+	"Prep time" : "10 min",
+	"Cook time" : "6 min",
+	"Makes" : "1 x 20 cm cake tin",
+        "image" : "Microwave_Chocolate_Fudge_Brownie.jpg",
+	"images" : [],
+        "tags" : ["brownies","chocolate"],
+		"ingredientTypes" : [ 
+							{"ingredients" : [
+												{"butter (melted)" : "100g"},
+												{"baking powder" : "5ml"},
+												{"sugar" : "250ml"},
+												{"eggs" : "2"},
+												{"Cocao powder" : "83ml"},
+												{"high grade flour" : "187ml"},
+												{"Chocolate Chips" : "250ml"}
+												]
+							}
+                         
+						],
+	 "method" : [ {"normal" : [
+		 		"Mix everything together",
+		 		"Line the dish with baking paper",
+				"Pour the mixture in microwavable dish",
+				"Make it for 6 mins in the microwave on HIGH. Watch it and you will see that the edges move away from the side so this is a good sign that it is cooked",
+				"When it comes out of the microwave it will still be a bit tacky but let it sit for a while. The lift out with the paper and turn upside down onto board – when cold peel paper off and sprinkle with icing sugar"
+				]}
+	 		]
+	 
+	 
+}
