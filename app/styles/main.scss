@@ -177,28 +177,14 @@ body {
 }
 
 .recipies {
-        margin-left : 5%;
+        margin-left : 0%;
+        width: 100%;
         
-	
 }
-
-@media (min-width: 768px) {
-    .recipies {
-        padding-left : 5%;
-        padding-right: 5%;
-        background-color : red;
-            
-    }
-}
-
-ul {
- padding : 0em;
- margin : 0em;
- }
 
 .recipy {
 		margin : 0.1em;
-                max-width: 275px;
+                max-width: 100%;
 		overflow : hidden;
 		@include boxshadow;
                 @include border-radius(10px);
@@ -209,13 +195,55 @@ ul {
                 
 }
 
-@media (min-width: 768px) {
-	.recipies {
-		margin : 1em;
-                
-		
-	}
+
+//smartphone landscape
+@media only screen and (min-width: 361px) {
+    .recipies {
+        padding-left : 0%;
+        padding-right: 0%;
+        background-color : red;
+    }
+    
+    .recipy {
+        max-width: 49%;
+    }
 }
+
+//tablets landscape
+@media only screen and (min-device-width : 533px)  and (min-device-height : 800px) and (orientation : landscape) {
+    .recipies {
+        padding-left : 0%;
+        padding-right: 0%;
+        background-color : green;
+    }
+    
+    .recipy {
+        max-width: 24%;
+    }
+}
+
+@media only screen and (min-width : 1224px) {
+    .recipies {
+        padding-left : 0%;
+        padding-right: 0%;
+        background-color : yellow;
+    }
+    
+    .recipy {
+        max-width: 275px;
+    }
+}
+
+ul {
+ padding : 0em;
+ margin : 0em;
+ }
+
+
+
+
+
+
 
 .recipe_display img{
 	height : 275px;
@@ -280,9 +308,9 @@ div.recipe_display div H3 {
 	display : none;
 }
 
-.container {
+.appcontainer {
     display: flex;
-    flex-direction : column;
+    flex-direction : row;
 }
 
 .hideIngrediens {
