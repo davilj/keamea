@@ -212,7 +212,7 @@ body {
 //tablets landscape
 @media only screen and (min-device-width : 533px)  and (min-device-height : 800px) and (orientation : landscape) {
     .recipies {
-        padding-left : 0%;
+        padding-left : 2%;
         padding-right: 0%;
         background-color : green;
     }
@@ -222,15 +222,27 @@ body {
     }
 }
 
-@media only screen and (min-width : 1224px) {
+@media only screen and (min-width : 1366px) {
     .recipies {
-        padding-left : 0%;
+        padding-left : 2%;
         padding-right: 0%;
         background-color : yellow;
     }
     
     .recipy {
-        max-width: 275px;
+        max-width: 19%;
+    }
+}
+
+@media only screen and (min-width : 1680px) {
+    .recipies {
+        padding-left : 2%;
+        padding-right: 0%;
+        background-color : blue;
+    }
+    
+    .recipy {
+        max-width: 18%;
     }
 }
 
